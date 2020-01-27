@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: LIGHTBLUE;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TableView fx:id="tableview1" layoutX="81.0" layoutY="75.0" prefHeight="350.0" prefWidth="438.0">
+        <columns>
+          <TableColumn fx:id="firstnamecol" onEditCommit="#changeFirstNameCellEvent" prefWidth="93.0" text="First Name" />
+          <TableColumn fx:id="middlenamecol" prefWidth="103.0" text="Middle Name" />
+            <TableColumn fx:id="lastnamecol" prefWidth="87.0" text="Last Name" />
+            <TableColumn fx:id="towncol" prefWidth="122.0" text="Birth Town" />
+        </columns>
+      </TableView>
+      <Button fx:id="button1" layoutX="81.0" layoutY="439.0" mnemonicParsing="false" onAction="#xMark" onMouseClicked="#xMark" prefHeight="25.0" prefWidth="48.0" text="X" />
+   </children>
+</AnchorPane>
